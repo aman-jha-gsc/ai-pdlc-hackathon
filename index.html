@@ -1,0 +1,40 @@
+# DESCRIPTION: The semantic HTML structure for the simple calculator application.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="calculator">
+        <div class="display">
+            <div data-display class="display-text">0</div>
+        </div>
+        <div class="button-grid">
+            <button data-all-clear class="control-btn">AC</button>
+            <!-- Note: +/- and % are not in the V1 PRD, so they are omitted. -->
+            <!-- The grid is adjusted to a 4x5 layout. -->
+            <button data-operator class="operator-btn">/</button>
+            <button data-operator class="operator-btn">*</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operator class="operator-btn">-</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operator class="operator-btn">+</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-equals rowspan="2" class="operator-btn span-two-rows">=</button>
+            <button data-number class="span-two-cols">0</button>
+            <button data-number>.</button>
+        </div>
+    </main>
+</body>
+</html>
